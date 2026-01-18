@@ -1,4 +1,3 @@
-# infer_emotion.py
 import json
 
 import torch
@@ -35,7 +34,7 @@ def predict(texts, max_length=128, top_k=1):
     model.eval()
     with torch.no_grad():
         outputs = model(**enc)
-        logits = outputs.logits  # (batch_size, num_labels)
+        logits = outputs.logits
         probs = F.softmax(logits, dim=-1).cpu().numpy()
 
     results = []
