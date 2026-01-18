@@ -5,7 +5,7 @@ import torch
 import torch.nn.functional as F
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-MODEL_DIR = "./bert-emotion"
+MODEL_DIR = "./output"
 LABEL_MAP_PATH = MODEL_DIR + "/label_mapping.json"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
