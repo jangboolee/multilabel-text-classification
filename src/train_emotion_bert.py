@@ -21,11 +21,11 @@ MAX_LENGTH = 128
 BATCH_SIZE = 16
 NUM_EPOCHS = 3
 LEARNING_RATE = 2e-5
-OUTPUT_DIR = "./bert-emotion"
+OUTPUT_DIR = "./output"
 SEED = 42
 NUM_LABELS = 6
 LABEL_NAMES = ["sadness", "joy", "love", "anger", "fear", "surprise"]
-LATEST_CHECKPOINT = "./bert-emotion/checkpoint-2000"
+LATEST_CHECKPOINT = "./output/checkpoint-2000"
 
 
 def set_seed(seed: int = SEED) -> bool:
